@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --corprincipal: #FFFFFF;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: var(--corprincipal);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.container {
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    color: white;
+}
+
+@media (max-width: 420px)
+{
+    .titulo::before {
+            content: "Cinza";
+    }
+    h2 {
+        background-color: gray;
+    }
+}
+
+@media (min-width: 421px) and (max-width: 768px)
+{
+    .titulo::before {
+            content: "Laranja";
+    }
+    h2 {
+        background-color: orange;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px)
+{
+    .titulo::before {
+            content: "Rosa";
+    }
+    h2 {
+        background-color: deeppink;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1080px)
+{
+    .titulo::before {
+            content: "Vermelho";
+    }
+    h2 {
+        background-color: red;
+    }
+}
+
+@media (min-width: 1081px) and (max-width: 1366px)
+{
+    .titulo::before {
+            content: "Roxo";
+    }
+    h2 {
+        background-color: purple;
+    }
+}
+
+@media (min-width: 1367px) and (max-width: 1920px)
+{
+    .titulo::before {
+            content: "Amarelo";
+    }
+    h2 {
+        background-color: yellow;
+    }
+}
+
+@media (min-width: 1921px)
+{
+    .titulo::before {
+            content: "Verde";
+    }
+    h2 {
+        background-color: green;
+    }
+}
