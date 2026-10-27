@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+    margin-top: 30vh;
+}
+
+select {
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 5px;
+}
