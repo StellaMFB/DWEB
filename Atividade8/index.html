@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Pesquisa de satisfação com o filme</h1>
+    <form id="formulario">
+        <input type="number" name="idade" id="idade" min="0" max="120">
+        <br>
+        <select name="sexo" id="sexo">
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="outros">Outros</option>
+        </select>
+        <br>
+        <select name="opiniao" id="opiniao">
+            <option value="4">Ótimo</option>
+            <option value="3">Bom</option>
+            <option value="2">Regular</option>
+            <option value="1">Péssimo</option>
+        </select>
+        <br>
+        <button>Enviar</button>
+    </form>
+
+    <div id="resultado">
+        <h2></h2>
+        <p></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
