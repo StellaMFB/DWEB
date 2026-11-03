@@ -42,6 +42,7 @@ formulario.addEventListener("submit", function (event) {
     if (qtd == 45)
     {
         media /= qtd;
+        media = parseInt(media, 10);
         pctOBom = (pctOBom * 100 / qtd).toFixed(2);
         formulario.innerHTML = "";
         document.querySelector("h2").innerHTML = "Informações das pessoas que responderam à pesquisa";

@@ -3,9 +3,22 @@ body {
     margin-top: 30vh;
 }
 
-select {
+select, input {
     width: 200px;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     margin-bottom: 5px;
+    height: 25px;
+    color: whitesmoke;
+    border-style: hidden;
+}
+
+button {
+    background-color: darkblue;
+    color: whitesmoke;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
 }
