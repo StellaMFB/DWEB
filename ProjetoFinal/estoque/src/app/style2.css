@@ -1,0 +1,115 @@
+.caixa {
+  width: 100%;
+  max-width: 640px;
+  padding: 32px;
+
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.logo {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 20px;
+  color: #2e7d4f;
+}
+
+.boas-vindas {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.opcao {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px 16px;
+
+  text-align: center;
+  text-decoration: none;
+  color: #222;
+
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.opcao:hover {
+  border-color: #2e7d4f;
+  background: #eef6f1;
+}
+
+.opcao strong {
+  color: #2e7d4f;
+  font-size: 17px;
+}
+
+.opcao span {
+  font-size: 14px;
+  color: #555;
+}
+
+.menu-admin {
+  margin-bottom: 20px;
+}
+
+.menu-admin[hidden] {
+  display: none;
+}
+
+.botao {
+  width: 100%;
+  padding: 12px;
+
+  font-size: 16px;
+  font-weight: bold;
+  color: #2e7d4f;
+
+  background: #fff;
+  border: 1px solid #2e7d4f;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botao:hover {
+  background: #eef6f1;
+}
+
+@media (max-width: 640px) {
+
+  .menu {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .opcao:last-child {
+    grid-column: 1 / -1;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  body {
+    align-items: flex-start;
+    padding: 12px;
+  }
+
+  .caixa {
+    padding: 20px;
+  }
+
+  .menu {
+    grid-template-columns: 1fr;
+  }
+
+}
